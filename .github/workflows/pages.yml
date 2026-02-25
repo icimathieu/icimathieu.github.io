@@ -29,7 +29,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --exclude vendor
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: Debug build tree
         run: |
           echo "PWD=$(pwd)"
