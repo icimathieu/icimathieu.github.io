@@ -1,0 +1,24 @@
+<section id="comments" class="comments">
+  <h2>Commentaires</h2>
+  {% if site.giscus and site.giscus.repo and site.giscus.repo_id and site.giscus.category and site.giscus.category_id %}
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ site.giscus.repo }}"
+          data-repo-id="{{ site.giscus.repo_id }}"
+          data-category="{{ site.giscus.category }}"
+          data-category-id="{{ site.giscus.category_id }}"
+          data-mapping="{{ site.giscus.mapping | default: 'pathname' }}"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="fr"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {% else %}
+  <p class="note">
+    Commentaires non configurés. Renseigne <code>giscus</code> dans <code>_config.yml</code>.
+  </p>
+  {% endif %}
+</section>

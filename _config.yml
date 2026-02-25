@@ -1,0 +1,71 @@
+title: "Mathieu Rivière"
+description: "Humanités numériques, histoire, philosophie, recherche et écriture personnelle."
+url: "https://icimathieu.github.io"
+baseurl: ""
+lang: "fr"
+timezone: "Europe/Paris"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+collections:
+  projects:
+    output: true
+    permalink: /projets/:name/
+  publications:
+    output: true
+    permalink: /publications/:name/
+  videos:
+    output: true
+    permalink: /videos/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      lang: fr
+      comments: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      comments: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+      comments: false
+  - scope:
+      path: ""
+      type: videos
+    values:
+      layout: video
+      comments: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+giscus:
+  repo: ""
+  repo_id: ""
+  category: "Commentaires"
+  category_id: ""
+  mapping: "pathname"
+
+exclude:
+  - README.md

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="content">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      {% if page.authors %}{{ page.authors | join: ", " }} · {% endif %}
+      {% if page.venue %}{{ page.venue }}{% endif %}
+      {% if page.year %} ({{ page.year }}){% endif %}
+    </p>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  </header>
+
+  {{ content }}
+
+  <p>
+    {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% if page.external_url %} · <a href="{{ page.external_url }}" target="_blank" rel="noopener">Accès éditeur</a>{% endif %}
+  </p>
+
+  {% if page.comments != false %}{% include comments.html %}{% endif %}
+</article>
