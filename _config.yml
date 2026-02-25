@@ -69,3 +69,8 @@ giscus:
 
 exclude:
   - README.md
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
