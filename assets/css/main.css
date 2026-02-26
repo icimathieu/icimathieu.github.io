@@ -14,7 +14,9 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background: var(--bg);
+  background:
+    linear-gradient(rgba(252, 252, 251, 0.9), rgba(252, 252, 251, 0.9)),
+    url("/assets/images/Canestra_di_frutta_(Caravaggio).jpg") center top / cover no-repeat fixed;
   color: var(--text);
   line-height: 1.7;
 }
@@ -61,6 +63,11 @@ body {
 
 .brand {
   text-align: center;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
 }
 
 nav a,
@@ -81,10 +88,6 @@ a {
 nav a:hover,
 a:hover {
   text-decoration: underline;
-}
-
-.brand {
-  font-weight: 700;
 }
 
 main {
@@ -162,5 +165,6 @@ h1 {
 @media (max-width: 640px) {
   body {
     font-size: 17px;
+    background-attachment: scroll;
   }
 }

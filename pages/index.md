@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <section>
-  <h1>Humanités numériques, histoire (& philosophie !?)</h1>
+  <h1>Humanités numériques, histoire, journalisme (& philosophie)</h1>
   <p>
     Je publie ici un carnet de recherche, des projets, des publications et des ressources vidéo.
     Le site sert de point central entre écrits natifs, articles externes, GitHub et YouTube.
