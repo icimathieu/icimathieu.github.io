@@ -14,11 +14,17 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background:
-    linear-gradient(rgba(252, 252, 251, 0.9), rgba(252, 252, 251, 0.9)),
-    url("/assets/images/Canestra_di_frutta_(Caravaggio).jpg") center top / cover no-repeat fixed;
+  background: var(--bg);
   color: var(--text);
   line-height: 1.7;
+}
+
+body::before,
+body::after {
+  content: "";
+  display: block;
+  height: 180px;
+  background: url("/assets/images/Canestra_di_frutta_(Caravaggio).jpg") center center / cover no-repeat;
 }
 
 .container {
@@ -163,8 +169,12 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  body::before,
+  body::after {
+    height: 120px;
+  }
+
   body {
     font-size: 17px;
-    background-attachment: scroll;
   }
 }
