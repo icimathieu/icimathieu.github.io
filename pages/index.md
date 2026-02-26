@@ -2,6 +2,7 @@
 layout: default
 title: Accueil
 description: Site personnel de recherche et d'écriture.
+permalink: /
 ---
 
 <section>
