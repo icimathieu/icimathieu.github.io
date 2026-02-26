@@ -1,54 +1,17 @@
-# icimathieu.github.io
+# Mathieu Rivière — site personnel
 
-Site personnel académique statique (Jekyll + GitHub Pages).
+Site personnel académique (humanités numériques, histoire, enquêtes), publié via GitHub Pages.
 
-## Démarrage local
+- URL: [https://icimathieu.github.io](https://icimathieu.github.io)
+- Générateur: Jekyll
+- Licence: Apache-2.0 (voir `LICENSE`)
 
-```bash
-bundle install
-bundle exec jekyll serve --livereload --drafts
-```
+## Fonctionnalités
 
-Le site est disponible sur `http://127.0.0.1:4000`.
+- Navigation: Archives, Blog, CV, Projets, Publications, Recherche, Vidéos.
+- Recherche interne: fonctionnelle (index JSON + recherche côté navigateur).
+- Flux RSS: non fonctionnel pour l'instant (à corriger).
 
-## Structure
+## Mises à jour
 
-- `pages/`: pages statiques (accueil, blog, projets, publications, vidéos, recherche, CV, contact)
-- `content/_posts/`: billets de blog/carnet
-- `content/_projects/`: projets
-- `content/_publications/`: publications
-- `content/_videos/`: vidéos
-- `search.json`: index de recherche locale
-- `assets/js/search.js`: logique client-side de recherche
-
-## Front matter minimal (obligatoire)
-
-```yml
-title:
-description:
-date:
-lang: fr
-tags: []
-categories: []
-comments: false
-published: true
-```
-
-## Commentaires (giscus)
-
-Renseigner dans `_config.yml`:
-
-```yml
-giscus:
-  repo: "OWNER/REPO"
-  repo_id: "..."
-  category: "Commentaires"
-  category_id: "..."
-  mapping: "pathname"
-```
-
-Ensuite activer GitHub Discussions sur le dépôt.
-
-## Déploiement
-
-Le workflow `.github/workflows/pages.yml` déploie automatiquement sur GitHub Pages à chaque push sur `main`.
+- Site lancé le 25 février 2026.

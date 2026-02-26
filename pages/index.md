@@ -43,11 +43,3 @@ permalink: /
   </ul>
   <p><a href="{{ '/projets/' | relative_url }}">Voir tous les projets</a></p>
 </section>
-
-<section>
-  <h2>Liens</h2>
-  <p>
-    <a href="https://github.com/icimathieu" target="_blank" rel="noopener">GitHub</a> ·
-    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-  </p>
-</section>
