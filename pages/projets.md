@@ -2,7 +2,6 @@
 layout: page
 title: Projets
 permalink: /projets/
-description: Projets de recherche et de développement.
 comments: false
 ---
 
