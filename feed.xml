@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ '/' | absolute_url }}</link>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    <language>{{ site.lang | default: 'fr' }}</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+    {% assign docs = site.posts | concat: site.publications | concat: site.videos | sort: 'date' | reverse %}
+    {% for doc in docs limit: 50 %}
+    <item>
+      <title>{{ doc.title | default: 'Sans titre' | xml_escape }}</title>
+      <link>{{ doc.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ doc.url | absolute_url }}</guid>
+      <pubDate>{{ doc.date | date_to_rfc822 }}</pubDate>
+      {% if doc.description %}<description>{{ doc.description | strip_html | xml_escape }}</description>{% endif %}
+      <category>{{ doc.collection | default: 'posts' | xml_escape }}</category>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
