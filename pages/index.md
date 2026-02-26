@@ -6,10 +6,15 @@ permalink: /
 ---
 
 <section>
-  <h1>Humanités numériques, histoire, philosophie</h1>
+  <h1>Humanités numériques, histoire (& philosophie !?)</h1>
   <p>
     Je publie ici un carnet de recherche, des projets, des publications et des ressources vidéo.
     Le site sert de point central entre écrits natifs, articles externes, GitHub et YouTube.
+    Je suis élève en première année du master Humanités numériques de l'École des Chartes et
+    je mène un mémoire en histoire des sciences sur les pastoriens et la IIIe République.
+  </p>
+  <p class="meta">
+    L'onglet <a href="{{ '/recherche/' | relative_url }}">Recherche</a> permet d'effectuer des recherches par mot-clé sur le site.
   </p>
 </section>
 
@@ -29,9 +34,9 @@ permalink: /
 
 <section>
   <h2>Projets mis en avant</h2>
-  {% assign featured = site.projects | where: "featured", true %}
+  {% assign featured = site.projects | where: "featured", true | sort: "project_order" %}
   {% if featured.size < 3 %}
-    {% assign featured = site.projects | sort: "date" | reverse %}
+    {% assign featured = site.projects | sort: "project_order" %}
   {% endif %}
   <ul class="card-list">
     {% for project in featured limit:3 %}

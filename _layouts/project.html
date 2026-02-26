@@ -5,6 +5,8 @@ layout: default
   <header>
     <h1>{{ page.title }}</h1>
     {% if page.status %}<p class="meta">Statut: {{ page.status }}</p>{% endif %}
+    {% if page.last_update %}<p class="meta">Dernière mise à jour: {{ page.last_update | date: "%d/%m/%Y" }}</p>{% endif %}
+    {% if page.progress %}<p class="meta">Avancement: {{ page.progress }}</p>{% endif %}
     {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   </header>
 
@@ -12,6 +14,7 @@ layout: default
 
   <p>
     {% if page.repo_url %}<a href="{{ page.repo_url }}" target="_blank" rel="noopener">Code source</a>{% endif %}
+    {% if page.repo_url_secondary %} · <a href="{{ page.repo_url_secondary }}" target="_blank" rel="noopener">Code source 2</a>{% endif %}
     {% if page.demo_url %} · <a href="{{ page.demo_url }}" target="_blank" rel="noopener">Démo</a>{% endif %}
   </p>
 

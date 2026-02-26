@@ -2,7 +2,6 @@
 layout: page
 title: Archives
 permalink: /archives/
-description: Archives chronologiques des billets du carnet.
 comments: false
 ---
 
@@ -19,21 +18,19 @@ comments: false
   <li class="card">
     <a href="{{ item.external_url }}" target="_blank" rel="noopener"><strong>{{ item.title }}</strong></a>
     <p class="meta">{{ item.date | date: "%d/%m/%Y" }}</p>
-    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
 {% endif %}
 
 {% if archived_videos.size > 0 %}
-### Vidéos (ancienne chaîne)
+### Vidéos youtube (l'Histosef)
 
 <ul class="card-list">
   {% for item in archived_videos %}
   <li class="card">
     <a href="{{ item.external_url }}" target="_blank" rel="noopener"><strong>{{ item.title }}</strong></a>
     <p class="meta">{{ item.date | date: "%d/%m/%Y" }}</p>
-    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>

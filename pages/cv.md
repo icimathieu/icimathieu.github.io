@@ -2,7 +2,6 @@
 layout: page
 title: CV
 permalink: /cv/
-description: CV de Mathieu Rivière
 comments: false
 ---
 

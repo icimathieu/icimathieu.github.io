@@ -2,7 +2,6 @@
 layout: page
 title: Recherche
 permalink: /recherche/
-description: Recherche plein texte locale.
 comments: false
 ---
 
