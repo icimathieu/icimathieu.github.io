@@ -24,6 +24,11 @@ body {
   margin: 0 auto;
 }
 
+.site-header .container,
+.site-footer .container {
+  width: min(1120px, 95vw);
+}
+
 .site-header,
 .site-footer {
   border-bottom: 1px solid var(--line);
@@ -39,10 +44,21 @@ body {
 .nav-wrap {
   padding: 0.9rem 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.2rem;
+  flex-direction: column;
+  gap: 0.55rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.nav-wrap nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  justify-content: center;
+}
+
+.brand {
+  text-align: center;
 }
 
 nav a,
