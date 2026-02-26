@@ -1,32 +1,28 @@
 ---
 title: "Vaucluse"
-description: "Pipeline de géolocalisation de cartes postales (données, nettoyage, cartographie)."
-date: 2026-02-25
+date: 2026-01-01
 last_update: 2026-02-26
 status: "en cours"
-progress: "35%"
+progress: "À terminer et industrialiser."
 project_order: 2
 featured: true
 comments: true
 repo_url: "https://github.com/icimathieu/vaucluse"
 categories: [projet]
-tags: [python, cartographie, donnees]
+tags: [python, cartographie, donnees, ocr, scraping]
 ---
 
 ## Objectif
 
 Constituer un pipeline reproductible pour extraire, nettoyer et géoréférencer des cartes postales.
 
-## État actuel
+## État actuel & Prochaines étapes
 
-- Scripts de préparation de données en place.
-- Première carte interactive produite.
-
-## Prochaines étapes
-
-- Consolider le nettoyage des métadonnées.
-- Améliorer la qualité du géocodage.
-- Documenter le workflow de bout en bout.
+- Réplicable.
+- Premières cartes interactives produites.
+- Consolider le nettoyage des métadonnées avec bdd ?
+- Améliorer la qualité du géocodage et contraindre sur zones.
+- Industrialiser la pipeline pour d'autres corpus.
 
 ## Journal de progression
 

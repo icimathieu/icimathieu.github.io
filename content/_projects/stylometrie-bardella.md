@@ -1,33 +1,26 @@
 ---
 title: "Stylométrie Bardella"
-description: "Comparaison stylométrique entre corpus écrit, oral transcrit et corpus de contrôle."
-date: 2026-02-24
+date: 2026-02-01
 last_update: 2026-02-26
 status: "en cours"
-progress: "45%"
+progress: "50%"
 project_order: 3
 featured: true
 comments: true
 repo_url: "https://github.com/icimathieu/stylometrie_bardella_v1"
 categories: [projet]
-tags: [stylometrie, corpus, textometrie]
+tags: [stylometrie, corpus, textometrie, bardella]
 ---
 
 ## Objectif
 
-Analyser les différences de style entre prises de parole orales transcrites et textes écrits.
+Analyser les différences de style entre prises de parole orales transcrites et textes écrits chez Jordan Bardella. Étant donné les doutes soulevés sur le fait qu'il ait bien écrit les derniers livres qu'il signe...
 
-## État actuel
+## État actuel & Prochaines étapes
 
-- Chaîne de prétraitement disponible.
-- Premiers tests de distances stylométriques réalisés.
-
-## Prochaines étapes
-
-- Stabiliser la sélection des traits.
-- Étendre les corpus de contrôle.
-- Rédiger une note méthodologique claire.
+- Une première pipeline complète a été réalisée mais résultats contradictoires qui obligent à envisager une autre méthodologie.
+- Comparer avec d'autres corpus transcription-écrit. Corpus à constituer et nouvelle pipeline.
 
 ## Journal de progression
 
-- **26/02/2026** : création de la page projet et structuration des prochaines étapes.
+- **26/02/2026** : création de la page projet et annonce 2è pipeline.

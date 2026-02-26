@@ -1,10 +1,9 @@
 ---
 title: "Mémoire"
-description: "Avancement du mémoire (problématique, corpus, méthode, rédaction)."
-date: 2026-02-26
+date: 2025-10-01
 last_update: 2026-02-26
 status: "en cours"
-progress: "10%"
+progress: "Genèse"
 project_order: 1
 featured: true
 comments: true
@@ -18,17 +17,13 @@ tags: [memoire, recherche]
 
 Documenter l'avancement du mémoire, les choix méthodologiques et les jalons de rédaction.
 
-## État actuel
+## État actuel & Prochaines étapes
 
-- Cadrage du sujet en cours.
+- Terminer scraping, structuration et océrisation.
 - Délimitation du corpus à finaliser.
 - Dépôts actifs: [scraping_pdf](https://github.com/icimathieu/scraping_pdf) et [transcription](https://github.com/icimathieu/transcription).
-
-## Prochaines étapes
-
-- Valider la problématique.
-- Finaliser la bibliographie de base.
-- Établir un plan détaillé.
+- Plan, historio, biblio technique, pbmtique...
+- Réfléchir suite pipeline.
 
 ## Journal de progression
 
