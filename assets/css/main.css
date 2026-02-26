@@ -19,8 +19,7 @@ body {
   line-height: 1.7;
 }
 
-body::before,
-body::after {
+body::before {
   content: "";
   display: block;
   height: 180px;
@@ -69,11 +68,7 @@ body::after {
 
 .brand {
   text-align: center;
-  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.55rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1.1;
 }
 
 nav a,
@@ -169,8 +164,7 @@ h1 {
 }
 
 @media (max-width: 640px) {
-  body::before,
-  body::after {
+  body::before {
     height: 120px;
   }
 
