@@ -14,6 +14,9 @@ permalink: /blog/:year/:month/:day/:title/
 collections_dir: content
 
 collections:
+  archives:
+    output: true
+    permalink: /archives/:name/
   projects:
     output: true
     permalink: /projets/:name/
@@ -30,6 +33,12 @@ defaults:
     values:
       layout: page
       lang: fr
+      comments: false
+  - scope:
+      path: ""
+      type: archives
+    values:
+      layout: page
       comments: false
   - scope:
       path: ""
