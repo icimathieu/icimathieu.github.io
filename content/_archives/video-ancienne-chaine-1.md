@@ -1,8 +1,8 @@
 ---
-title: "Vidéo ancienne 1"
-description: "Vidéo de l'ancienne chaîne YouTube (lien à mettre à jour)."
-date: 2024-05-10
+title: "Sur Louis XVI"
+description: "La face cachée de Louis 16 ."
+date: 2024-12-27
 archive_type: video
-external_url: https://www.youtube.com/watch?v=VIDEO_ID_1
+external_url: https://www.youtube.com/watch?v=333-0i225xg
 comments: false
 ---

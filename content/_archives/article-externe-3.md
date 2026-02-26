@@ -1,8 +1,8 @@
 ---
-title: "Article externe 3"
-description: "Article publié en 2025 (lien externe à mettre à jour)."
-date: 2025-11-18
+title: "Les télévangélistes américaines renouent l’alliance républicaine"
+description: "Article publié dans L’Ouvreuse."
+date: 2024-12-21
 archive_type: article
-external_url: https://example.org/article-3
+external_url: https://louvreuse-magazine.fr/les-televangelistes-americaines-renouent-lalliance-republicaine/
 comments: false
 ---

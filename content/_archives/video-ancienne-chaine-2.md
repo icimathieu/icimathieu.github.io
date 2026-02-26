@@ -1,8 +1,8 @@
 ---
-title: "Vidéo ancienne 2"
-description: "Vidéo de l'ancienne chaîne YouTube (lien à mettre à jour)."
-date: 2024-09-01
+title: "Sur Louis XI"
+description: "Pourquoi tout le monde aime Louis XI ??."
+date: 2024-04-19
 archive_type: video
-external_url: https://www.youtube.com/watch?v=VIDEO_ID_2
+external_url: https://www.youtube.com/watch?v=79KekDEeksA
 comments: false
 ---

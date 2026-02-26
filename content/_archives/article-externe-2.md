@@ -1,8 +1,8 @@
 ---
-title: "Article externe 2"
-description: "Article publié en 2025 (lien externe à mettre à jour)."
-date: 2025-06-03
+title: "Starve the Beast : la stratégie du gouvernement"
+description: "Article publié dans L’Ouvreuse."
+date: 2024-11-11
 archive_type: article
-external_url: https://example.org/article-2
+external_url: https://louvreuse-magazine.fr/starve-the-beast-la-strategie-du-gouvernement/
 comments: false
 ---
