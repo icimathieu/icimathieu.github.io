@@ -16,6 +16,9 @@ permalink: /
   <p class="meta">
     L'onglet <a href="{{ '/recherche/' | relative_url }}">Recherche</a> permet d'effectuer des recherches par mot-clé sur le site.
   </p>
+  <p class="meta">
+    Le lien <a href="{{ '/feed.xml' | relative_url }}">RSS</a> dans le footer permet de s'abonner aux nouvelles publications (blog, archives vidéo et publications) dans un lecteur RSS.
+  </p>
 </section>
 
 <section>
