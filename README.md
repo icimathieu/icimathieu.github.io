@@ -13,10 +13,11 @@ Le site est disponible sur `http://127.0.0.1:4000`.
 
 ## Structure
 
-- `_posts/`: billets de blog/carnet
-- `_projects/`: projets
-- `_publications/`: publications
-- `_videos/`: vidéos
+- `pages/`: pages statiques (accueil, blog, projets, publications, vidéos, recherche, CV, contact)
+- `content/_posts/`: billets de blog/carnet
+- `content/_projects/`: projets
+- `content/_publications/`: publications
+- `content/_videos/`: vidéos
 - `search.json`: index de recherche locale
 - `assets/js/search.js`: logique client-side de recherche
 
