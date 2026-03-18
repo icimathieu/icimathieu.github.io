@@ -4,6 +4,13 @@
 
   if (!input || !resultsRoot) return;
 
+  const texts = window.__SEARCH_TEXTS || {
+    indexUnavailable: "Index de recherche indisponible.",
+    noResults: "Aucun résultat.",
+    minChars: "Saisissez au moins 2 caractères.",
+    fallbackType: "contenu",
+  };
+
   const normalize = (text) =>
     (text || "")
       .toLowerCase()
@@ -24,7 +31,7 @@
       docs = data;
     })
     .catch(() => {
-      resultsRoot.innerHTML = '<p>Index de recherche indisponible.</p>';
+      resultsRoot.innerHTML = `<p>${texts.indexUnavailable}</p>`;
     });
 
   function score(doc, tokens, rawQuery) {
@@ -60,7 +67,7 @@
 
   function render(items, query) {
     if (!items.length) {
-      resultsRoot.innerHTML = "<p>Aucun résultat.</p>";
+      resultsRoot.innerHTML = `<p>${texts.noResults}</p>`;
       return;
     }
 
@@ -70,7 +77,7 @@
         return `
           <article class="search-item">
             <a href="${item.url}"><strong>${item.title}</strong></a>
-            <div class="meta">${item.type || "contenu"}${item.date ? " · " + item.date : ""}</div>
+            <div class="meta">${item.type || texts.fallbackType}${item.date ? " · " + item.date : ""}</div>
             <p>${snippet}</p>
           </article>
         `;
@@ -81,7 +88,7 @@
   input.addEventListener("input", function () {
     const query = input.value.trim();
     if (query.length < 2) {
-      resultsRoot.innerHTML = "<p>Saisissez au moins 2 caractères.</p>";
+      resultsRoot.innerHTML = `<p>${texts.minChars}</p>`;
       return;
     }
 

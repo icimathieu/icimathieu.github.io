@@ -2,6 +2,7 @@
 layout: default
 ---
 <article class="content">
+  {% assign is_en = page.lang == "en" %}
   <header>
     <h1>{{ page.title }}</h1>
     <p class="meta">
@@ -16,7 +17,7 @@ layout: default
 
   <p>
     {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-    {% if page.external_url %} · <a href="{{ page.external_url }}" target="_blank" rel="noopener">Accès éditeur</a>{% endif %}
+    {% if page.external_url %} · <a href="{{ page.external_url }}" target="_blank" rel="noopener">{% if is_en %}Publisher link{% else %}Accès éditeur{% endif %}</a>{% endif %}
   </p>
 
   {% if page.comments != false %}{% include comments.html %}{% endif %}

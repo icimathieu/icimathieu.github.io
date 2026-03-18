@@ -54,9 +54,10 @@ body::before {
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.nav-wrap nav {
+.nav-wrap .nav-main {
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
@@ -64,6 +65,19 @@ body::before {
   align-items: center;
   white-space: nowrap;
   overflow-x: auto;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.lang-switch strong {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .brand {
@@ -170,5 +184,15 @@ h1 {
 
   body {
     font-size: 17px;
+  }
+
+  .nav-wrap {
+    justify-content: center;
+  }
+
+  .nav-wrap .nav-main {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
   }
 }

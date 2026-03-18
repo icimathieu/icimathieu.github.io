@@ -1,7 +1,62 @@
 <header class="site-header">
+  {% assign is_en = page.lang == "en" %}
+  {% assign switch_url = nil %}
+  {% assign counterpart = nil %}
+
+  {% if page.translation_key %}
+    {% assign docs = site.pages | concat: site.posts | concat: site.projects | concat: site.publications | concat: site.videos | concat: site.archives %}
+    {% assign same_key = docs | where: "translation_key", page.translation_key %}
+    {% for item in same_key %}
+      {% if item.lang != page.lang %}
+        {% assign counterpart = item %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if counterpart %}
+    {% assign switch_url = counterpart.url %}
+  {% else %}
+    {% case page.url %}
+      {% when "/" %}{% assign switch_url = "/en/" %}
+      {% when "/archives/" %}{% assign switch_url = "/en/archives/" %}
+      {% when "/blog/" %}{% assign switch_url = "/en/blog/" %}
+      {% when "/cv/" %}{% assign switch_url = "/en/cv/" %}
+      {% when "/projets/" %}{% assign switch_url = "/en/projects/" %}
+      {% when "/publications/" %}{% assign switch_url = "/en/publications/" %}
+      {% when "/recherche/" %}{% assign switch_url = "/en/research/" %}
+      {% when "/videos/" %}{% assign switch_url = "/en/videos/" %}
+      {% when "/en/" %}{% assign switch_url = "/" %}
+      {% when "/en/archives/" %}{% assign switch_url = "/archives/" %}
+      {% when "/en/blog/" %}{% assign switch_url = "/blog/" %}
+      {% when "/en/cv/" %}{% assign switch_url = "/cv/" %}
+      {% when "/en/projects/" %}{% assign switch_url = "/projets/" %}
+      {% when "/en/publications/" %}{% assign switch_url = "/publications/" %}
+      {% when "/en/research/" %}{% assign switch_url = "/recherche/" %}
+      {% when "/en/videos/" %}{% assign switch_url = "/videos/" %}
+    {% endcase %}
+  {% endif %}
+
+  {% if switch_url == nil %}
+    {% if is_en %}
+      {% assign switch_url = "/" %}
+    {% else %}
+      {% assign switch_url = "/en/" %}
+    {% endif %}
+  {% endif %}
+
   <div class="container nav-wrap">
-    <a class="brand" href="{{ '/' | relative_url }}">Mathieu Rivière</a>
-    <nav>
+    <a class="brand" href="{% if is_en %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Mathieu Rivière</a>
+    <nav class="nav-main">
+      {% if is_en %}
+      <a href="{{ '/en/archives/' | relative_url }}">Archives</a>
+      <a href="{{ '/en/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/en/cv/' | relative_url }}">CV</a>
+      <a href="{{ '/en/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/en/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/en/research/' | relative_url }}">Research</a>
+      <a href="{{ '/en/videos/' | relative_url }}">Videos</a>
+      {% else %}
       <a href="{{ '/archives/' | relative_url }}">Archives</a>
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="{{ '/cv/' | relative_url }}">CV</a>
@@ -9,6 +64,18 @@
       <a href="{{ '/publications/' | relative_url }}">Publications</a>
       <a href="{{ '/recherche/' | relative_url }}">Recherche</a>
       <a href="{{ '/videos/' | relative_url }}">Vidéos</a>
+      {% endif %}
+    </nav>
+    <nav class="lang-switch" aria-label="{% if is_en %}Language switch{% else %}Changement de langue{% endif %}">
+      {% if is_en %}
+      <a href="{{ switch_url | relative_url }}" lang="fr" hreflang="fr">FR</a>
+      <span aria-hidden="true">|</span>
+      <strong lang="en">EN</strong>
+      {% else %}
+      <strong lang="fr">FR</strong>
+      <span aria-hidden="true">|</span>
+      <a href="{{ switch_url | relative_url }}" lang="en" hreflang="en">EN</a>
+      {% endif %}
     </nav>
   </div>
 </header>
