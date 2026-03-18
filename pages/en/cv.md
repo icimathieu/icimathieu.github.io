@@ -13,9 +13,9 @@ translation_key: cv
 
 **Email:** mathieu.riviere@chartes.psl.eu 
 
-**GitHub:** https://github.com/icimathieu
+**GitHub:** [https://github.com/icimathieu](https://github.com/icimathieu)
 
-**Website:** https://icimathieu.github.io/
+**Website:** [https://icimathieu.github.io/](https://icimathieu.github.io/)
 
 ---
 
