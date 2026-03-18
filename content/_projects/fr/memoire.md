@@ -19,6 +19,12 @@ translation_key: project-memoire
 
 Documenter l'avancement du mémoire, les choix méthodologiques et les jalons de rédaction.
 
+## Fait
+
+- téléchargement sous-corpus de presse généraliste
+- pipeline de scraping pdfs Gallica (revues scientifiques essentiellement)
+- premier script d'ocr avec tesseract et reconstruction colonnes
+
 ## État actuel & Prochaines étapes
 
 - Terminer scraping, structuration et océrisation.
@@ -26,12 +32,6 @@ Documenter l'avancement du mémoire, les choix méthodologiques et les jalons de
 - Dépôts actifs: [scraping_pdf](https://github.com/icimathieu/scraping_pdf) et [transcription](https://github.com/icimathieu/transcription).
 - Plan, historio, biblio technique, pbmtique, rédaction, etc.
 - Structuration : passer de sous-corpus océrisés à des articles avec
-
-### Fait
-
-- téléchargement sous-corpus de presse généraliste
-- pipeline de scraping pdfs Gallica (revues scientifiques essentiellement)
-- premier script d'ocr avec tesseract et reconstruction colonnes
 
 ## Journal de progression
 

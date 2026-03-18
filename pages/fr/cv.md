@@ -10,7 +10,7 @@ translation_key: cv
 <p><a class="button" href="{{ '/assets/docs/cv_mathieu_riviere_2026.pdf' | relative_url }}" download>Télécharger le CV en PDF</a></p>
 
 # Mathieu Rivière
-**Adresse mail :** mathieu.riviere.perso@gmail.com  
+**Adresse mail :** mathieu.riviere@chartes.psl.eu
 **GitHub :** https://github.com/icimathieu  
 **Site :** https://icimathieu.github.io/  
 **Localisation :** Paris  

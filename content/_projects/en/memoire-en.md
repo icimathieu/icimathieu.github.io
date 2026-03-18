@@ -20,6 +20,12 @@ permalink: /en/projects/thesis/
 
 Document thesis progress, methodological choices, and writing milestones.
 
+## Done
+
+- downloaded a sub-corpus from the general press
+- Gallica PDF scraping pipeline (mostly scientific journals)
+- first OCR script with Tesseract and column reconstruction
+
 ## Current state & Next steps
 
 - Finish scraping, corpus structuring, and OCR processing.
@@ -27,12 +33,6 @@ Document thesis progress, methodological choices, and writing milestones.
 - Active repositories: [scraping_pdf](https://github.com/icimathieu/scraping_pdf) and [transcription](https://github.com/icimathieu/transcription).
 - Plan, historiography, technical bibliography, problem statement, writing, etc.
 - Structuring: move from OCR-processed sub-corpora to article-level units.
-
-### Done
-
-- downloaded a sub-corpus from the general press
-- Gallica PDF scraping pipeline (mostly scientific journals)
-- first OCR script with Tesseract and column reconstruction
 
 ## Progress log
 
