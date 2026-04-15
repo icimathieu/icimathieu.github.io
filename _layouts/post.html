@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="content">
-  {% assign is_en = page.lang == "en" %}
+  {% assign current_lang = page.lang | default: site.lang | default: "fr" %}
   <header>
     <h1>{{ page.title }}</h1>
     <p class="meta">
@@ -15,7 +15,7 @@ layout: default
   {{ content }}
 
   {% if page.tags and page.tags.size > 0 %}
-  <p class="tags">{% if is_en %}Tags{% else %}Tags{% endif %}: {{ page.tags | join: ", " }}</p>
+  <p class="tags">{% if current_lang == "en" %}Tags{% else %}Tags{% endif %}: {{ page.tags | join: ", " }}</p>
   {% endif %}
 
   {% if page.comments != false %}{% include comments.html %}{% endif %}

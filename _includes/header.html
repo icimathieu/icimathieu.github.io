@@ -1,5 +1,5 @@
 <header class="site-header">
-  {% assign is_en = page.lang == "en" %}
+  {% assign current_lang = page.lang | default: site.lang | default: "fr" %}
   {% assign switch_url = nil %}
   {% assign counterpart = nil %}
 
@@ -7,7 +7,7 @@
     {% assign docs = site.pages | concat: site.posts | concat: site.projects | concat: site.publications | concat: site.videos | concat: site.archives %}
     {% assign same_key = docs | where: "translation_key", page.translation_key %}
     {% for item in same_key %}
-      {% if item.lang != page.lang %}
+      {% if item.lang != current_lang %}
         {% assign counterpart = item %}
         {% break %}
       {% endif %}
@@ -38,7 +38,7 @@
   {% endif %}
 
   {% if switch_url == nil %}
-    {% if is_en %}
+    {% if current_lang == "en" %}
       {% assign switch_url = "/" %}
     {% else %}
       {% assign switch_url = "/en/" %}
@@ -46,9 +46,9 @@
   {% endif %}
 
   <div class="container nav-wrap">
-    <a class="brand" href="{% if is_en %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Mathieu Rivière</a>
+    <a class="brand" href="{% if current_lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Mathieu Rivière</a>
     <nav class="nav-main">
-      {% if is_en %}
+      {% if current_lang == "en" %}
       <a href="{{ '/en/archives/' | relative_url }}">Archives</a>
       <a href="{{ '/en/blog/' | relative_url }}">Blog</a>
       <a href="{{ '/en/cv/' | relative_url }}">CV</a>
@@ -58,7 +58,7 @@
       <a href="{{ '/en/videos/' | relative_url }}">Videos</a>
       {% else %}
       <a href="{{ '/archives/' | relative_url }}">Archives</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/blog/' | relative_url }}">Carnet</a>
       <a href="{{ '/cv/' | relative_url }}">CV</a>
       <a href="{{ '/projets/' | relative_url }}">Projets</a>
       <a href="{{ '/publications/' | relative_url }}">Publications</a>
@@ -66,8 +66,8 @@
       <a href="{{ '/videos/' | relative_url }}">Vidéos</a>
       {% endif %}
     </nav>
-    <nav class="lang-switch" aria-label="{% if is_en %}Language switch{% else %}Changement de langue{% endif %}">
-      {% if is_en %}
+    <nav class="lang-switch" aria-label="{% if current_lang == 'en' %}Language switch{% else %}Changement de langue{% endif %}">
+      {% if current_lang == "en" %}
       <a href="{{ switch_url | relative_url }}" lang="fr" hreflang="fr">FR</a>
       <span aria-hidden="true">|</span>
       <strong lang="en">EN</strong>

@@ -13,10 +13,6 @@ Site personnel académique (humanités numériques, histoire, enquêtes), publi�
 - Recherche interne: fonctionnelle (index JSON + recherche côté navigateur).
 - Flux RSS unique: fonctionnel (blog + publications + vidéos).
 
-## Mises à jour
-
-- Site lancé le 25 février 2026.
-
 ## Flux RSS
 
 Le flux RSS unique permet de s'abonner aux mises à jour des vidéos, du blog et des publications.

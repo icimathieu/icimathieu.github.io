@@ -2,21 +2,21 @@
 layout: default
 ---
 <article class="content">
-  {% assign is_en = page.lang == "en" %}
+  {% assign current_lang = page.lang | default: site.lang | default: "fr" %}
   <header>
     <h1>{{ page.title }}</h1>
-    {% if page.status %}<p class="meta">{% if is_en %}Status{% else %}Statut{% endif %}: {{ page.status }}</p>{% endif %}
-    {% if page.last_update %}<p class="meta">{% if is_en %}Last update{% else %}Dernière mise à jour{% endif %}: {{ page.last_update | date: "%d/%m/%Y" }}</p>{% endif %}
-    {% if page.progress %}<p class="meta">{% if is_en %}Progress{% else %}Avancement{% endif %}: {{ page.progress }}</p>{% endif %}
+    {% if page.status %}<p class="meta">{% if current_lang == "en" %}Status{% else %}Statut{% endif %}: {{ page.status }}</p>{% endif %}
+    {% if page.last_update %}<p class="meta">{% if current_lang == "en" %}Last update{% else %}Dernière mise à jour{% endif %}: {{ page.last_update | date: "%d/%m/%Y" }}</p>{% endif %}
+    {% if page.progress %}<p class="meta">{% if current_lang == "en" %}Progress{% else %}Avancement{% endif %}: {{ page.progress }}</p>{% endif %}
     {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   </header>
 
   {{ content }}
 
   <p>
-    {% if page.repo_url %}<a href="{{ page.repo_url }}" target="_blank" rel="noopener">{% if is_en %}Source code{% else %}Code source{% endif %}</a>{% endif %}
-    {% if page.repo_url_secondary %} · <a href="{{ page.repo_url_secondary }}" target="_blank" rel="noopener">{% if is_en %}Source code 2{% else %}Code source 2{% endif %}</a>{% endif %}
-    {% if page.demo_url %} · <a href="{{ page.demo_url }}" target="_blank" rel="noopener">{% if is_en %}Demo{% else %}Démo{% endif %}</a>{% endif %}
+    {% if page.repo_url %}<a href="{{ page.repo_url }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Source code{% else %}Code source{% endif %}</a>{% endif %}
+    {% if page.repo_url_secondary %} · <a href="{{ page.repo_url_secondary }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Source code 2{% else %}Code source 2{% endif %}</a>{% endif %}
+    {% if page.demo_url %} · <a href="{{ page.demo_url }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Demo{% else %}Démo{% endif %}</a>{% endif %}
   </p>
 
   {% if page.comments != false %}{% include comments.html %}{% endif %}

@@ -1,6 +1,6 @@
 <section id="comments" class="comments">
-  {% assign is_en = page.lang == "en" %}
-  <h2>{% if is_en %}Comments{% else %}Commentaires{% endif %}</h2>
+  {% assign current_lang = page.lang | default: site.lang | default: "fr" %}
+  <h2>{% if current_lang == "en" %}Comments{% else %}Commentaires{% endif %}</h2>
   {% if site.giscus and site.giscus.repo and site.giscus.repo_id and site.giscus.category and site.giscus.category_id %}
   <script src="https://giscus.app/client.js"
           data-repo="{{ site.giscus.repo }}"
@@ -13,13 +13,13 @@
           data-emit-metadata="0"
           data-input-position="bottom"
           data-theme="preferred_color_scheme"
-          data-lang="{% if is_en %}en{% else %}fr{% endif %}"
+          data-lang="{% if current_lang == "en" %}en{% else %}fr{% endif %}"
           crossorigin="anonymous"
           async>
   </script>
   {% else %}
   <p class="note">
-    {% if is_en %}
+    {% if current_lang == "en" %}
     Comments are not configured. Fill in <code>giscus</code> in <code>_config.yml</code>.
     {% else %}
     Commentaires non configurés. Renseigne <code>giscus</code> dans <code>_config.yml</code>.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: Carnet
 permalink: /blog/
 description: Carnet de recherche et billets.
 comments: false
