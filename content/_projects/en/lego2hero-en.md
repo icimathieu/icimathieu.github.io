@@ -4,7 +4,7 @@ description: "Reassembling fragmented mosaics with VLMs and GNNs, using large-sc
 date: 2026-05-01
 last_update: 2026-06-21
 status: "in progress"
-progress: "Synthetic dataset published; YOLO/GNN training underway."
+progress: "Synthetic dataset published; YOLO/GNN & VLM training underway."
 project_order: 4
 featured: true
 comments: true
@@ -29,10 +29,10 @@ Group project (advanced Python course, Digital Humanities master's): reassemble 
 
 ## Current state & Next steps
 
-- Forge and feature extraction finalized; a dataset of ~25,000 instances published on HuggingFace.
+- Forge and feature extraction finalized; a dataset of ~25,000 instances published on HuggingFace. Adjust generation to get closer to the target use case.
 - Dataset: [lego2hero-100mosaics](https://huggingface.co/datasets/icimathieu/lego2hero-100mosaics).
-- Underway: YOLO-Seg and GNN training, first transfer experiments.
-- Work submitted to a digital humanities conference (CHR 2027).
+- Underway: YOLO-Seg training on my side, first transfer experiments + figuring out when a YOLO becomes good (learning curve?).
+- Gathering all mosaic corpora, whether synthetic or real.
 
 ## Progress log
 

@@ -1,6 +1,5 @@
 ---
 title: "DECIDON — NER sur débats parlementaires"
-description: "Stage de recherche (projet ANR DECIDON) : reconnaissance d'entités nommées sur des débats parlementaires de la IIIe République."
 date: 2026-05-01
 last_update: 2026-06-27
 status: "en cours"
@@ -16,14 +15,7 @@ translation_key: project-decidon
 
 ## Objectif
 
-Stage de recherche (mai – décembre 2026, équivalent à cinq mois à temps plein) sur le projet ANR **DECIDON** (EPITA · ENC · EHESS). Le projet mène une étude computationnelle de la vie parlementaire sous la IIIe République (1870-1940) : circulation des problèmes publics entre presse et Parlement, et mécanismes de mise à l'agenda. Ma contribution porte sur la **reconnaissance d'entités nommées (NER)** appliquée à des débats parlementaires numérisés et océrisés.
-
-## Mon rôle
-
-- Conception du guide et du schéma d'annotation, et coordination des annotations (Label Studio).
-- Sélection, entraînement et inférence de modèles de NER : comparaison de plusieurs approches (règles, spaCy, BERT/CamemBERT, GLiNER, LLM affinés).
-- Évaluation selon les conventions du domaine (HIPE, micro-F1).
-- À venir : détection d'évènements.
+Stage de recherche (mai – décembre 2026) sur le projet ANR **DECIDON** (EPITA · ENC · EHESS). Le projet mène une étude computationnelle de la vie parlementaire (compte rendu in-extenso des débats parlementaires) sous la IIIe République (1870-1940) : circulation des problèmes publics entre presse et Parlement, et mécanismes de mise à l'agenda. Ma contribution porte sur la **reconnaissance d'entités nommées (NER)** (WP3) appliquée à des débats parlementaires numérisés et océrisés.
 
 ## Entités annotées
 
@@ -31,9 +23,10 @@ Orateurs, fonctions, personnes mentionnées, titres de section, didascalies.
 
 ## État actuel & Prochaines étapes
 
-- Corpus de vérité terrain annoté ; plusieurs pipelines de NER comparées.
+- Conception du guide et du schéma d'annotation, et coordination des annotations (Label Studio).
+- Corpus de vérité terrain annoté ; plusieurs pipelines de NER comparées (regex, spaCy-CNN, BERTs, GLiNER2, GLiNER-bi-V2, LLM). Aucun choix définitif pour l'instant.
 - Sources OCR : PERO OCR et un modèle de vision-langage (Chandra) en cours d'intégration.
-- Suite : passage à l'échelle sur le corpus puis détection d'évènements.
+- Suite : passage à l'échelle sur le corpus puis détection d'évènements / entités géographiques.
 
 ## Ressources
 
@@ -41,5 +34,5 @@ Orateurs, fonctions, personnes mentionnées, titres de section, didascalies.
 
 ## Journal de progression
 
-- **05/2026** : début du stage ; conception du schéma d'annotation et coordination des annotations.
+- **05/2026** : début du stage ; conception du schéma d'annotation et reprise des annotations.
 - **06/2026** : benchmark de plusieurs approches de NER (règles, spaCy, BERT, GLiNER, LLM).

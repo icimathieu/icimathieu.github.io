@@ -1,10 +1,9 @@
 ---
 title: "FromLego2Hero — reconstitution de mosaïques"
-description: "Reconstitution de mosaïques fragmentées par VLM et GNN, avec génération massive de données synthétiques (mosaïques LEGO)."
 date: 2026-05-01
 last_update: 2026-06-21
 status: "en cours"
-progress: "Dataset synthétique publié ; entraînement YOLO/GNN en cours."
+progress: "Dataset synthétique publié ; entraînement YOLO/GNN & VLM en cours."
 project_order: 4
 featured: true
 comments: true
@@ -28,10 +27,10 @@ Projet de groupe (cours de Python avancé, master Humanités numériques) : reco
 
 ## État actuel & Prochaines étapes
 
-- Forge et extraction de descripteurs finalisées ; jeu de données de ~25 000 instances publié sur HuggingFace.
+- Forge et extraction de descripteurs finalisées ; jeu de données de ~25 000 instances publié sur HuggingFace. Changer la génération pour se rapprocher du cas d'usage.
 - Jeu de données : [lego2hero-100mosaics](https://huggingface.co/datasets/icimathieu/lego2hero-100mosaics).
-- En cours : entraînement YOLO-Seg et GNN, premières expériences de transfert.
-- Travail soumis à une conférence d'humanités numériques (CHR 2027).
+- En cours : entraînement YOLO-Seg de mon côté, premières expériences de transfert + voir quand est-ce qu'un YOLO devient bon (courbe de progression ?)
+- récupération de tous les corpus de mosaïques, qu'ils soient synthétiques ou réels.
 
 ## Journal de progression
 
