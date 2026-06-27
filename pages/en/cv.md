@@ -11,97 +11,98 @@ translation_key: cv
 
 # Mathieu Riviere
 
-**Email:** mathieu.riviere@chartes.psl.eu 
+First-year MA student in "Digital and Computational Humanities" — Ecole nationale des chartes · Universite PSL
+
+**Email:** mathieu.riviere@chartes.psl.eu
+
+**Website:** [https://icimathieu.github.io/](https://icimathieu.github.io/)
 
 **GitHub:** [https://github.com/icimathieu](https://github.com/icimathieu)
 
-**Website:** [https://icimathieu.github.io/](https://icimathieu.github.io/)
+**Hugging Face:** [https://huggingface.co/icimathieu](https://huggingface.co/icimathieu)
 
 ---
 
 ## Profile
 
-First-year MA student in Digital Humanities at Ecole des Chartes, interested in web infrastructure in a broad sense, data processing workflows, and opportunities enabled by generative AI, I am looking for a research internship in digital humanities.
+A digital humanities student, I work on applying computational methods to contemporary history: exploiting digitized (and born-digital) sources and natural language processing. My thesis in the history of science focuses on the "pasteurization" of metropolitan France (1870-1914) and brings together Pasteurians, scientific journals, the press, and parliamentarians under the Third Republic; it relies on scraping, OCR, corpus structuring, annotation, RAG, and classification.
 
-My master's thesis in the history of science focuses on interactions between Pasteurians, scientific journals, the press, and parliamentarians under the Third Republic. It relies on computational methods: Gallica scraping, OCR, corpus structuring, annotation, RAG, and more broadly natural language processing.
-
-**Outlook:** History agrégation, then a PhD in history with a strong digital humanities component.
-
----
-
-## Skills
-
-- **Languages:** English C1 (TOEIC 860, 2020); German B1-B2
-- **Programming / data & web:** Python (numpy, pandas, networkx, scikit-learn, PyTorch, OpenAI API, folium); HTML, JavaScript and RSS (basic web development); C (basics), R (basics).
-- **Scraping:** BeautifulSoup (HTML parsing), Selenium (anti-bot bypass), Scrapy (proxy and VPN management): scraping of press and archive sources (Gallica, *Le Monde diplomatique*, Archives du Vaucluse)
-- **OCR, vision & annotation:** local models (PaddleOCR, Tesseract, YOLO) or API models (Qwen-VL, Gemini), and Label Studio.
-- **Structuring / editing:** XML-TEI, XPath, LaTeX, digital publishing workflows, basic database knowledge.
-- **Textometry / NLP:** TXM, Iramuteq, Python processing (n-grams, function words, distances, etc.), RAG, NER, stylometry, emotion detection.
-- **Tools:** GitHub (version control and publishing), HuggingFace, LLMs via API or locally.
-
----
-
-## Selected Projects
-
-### Archives du Vaucluse - OCR pipeline, geolocation, and postcard mapping (ENC Hackathon 2026)
-
-- **Repository:** https://github.com/icimathieu/vaucluse
-- **Scope:** OCR of postcards with VLMs, metadata extraction and cleaning, georeferencing, JSON/CSV structuring, and production of an interactive map (HTML). Database querying both locally and via API.
-
-### Oral/Written stylometry - Jordan Bardella corpus
-
-- **Repository:** https://github.com/icimathieu/stylometrie_bardella_v1
-- **Scope:** stylometric comparison between a written corpus, a transcribed oral corpus, and a control corpus; feature extraction (n-grams, function words), distance measures (cosine, Burrows' Delta), preprocessing scripts, and visualizations.
-
-### Master's thesis - currently: scraping, scientific corpus structuring, and annotation
-
-- **Repositories:** https://github.com/icimathieu/scraping_pdf & https://github.com/icimathieu/transcription
-- **Scope:** scraping and metadata extraction from Gallica; OCR of scientific journals (late 19th to early 20th century) with comparison of different models; corpus structuring; file and database management; first experiments in annotation with Label Studio and RAG (unpublished).
-
----
-
-## Experience
-
-### Video creator - [Histosef](https://www.youtube.com/@LHistosef/videos)
-
-**June 2023 - present**
-
-Production of popular history video content on YouTube based on scientific readings and, at times, essays.
-
-### Writer - L'Ouvreuse (Sorbonne webzine)
-
-**July 2024 - present**
-
-### Research internship - Digital editing and textometry (CACTUS group, ENS de Lyon)
-
-**January 2025 - April 2025**
-
-Participation in the digital editing of medieval texts from the [Base de Francais Medieval](https://txm-bfm.huma-num.fr/txm/):
-- metadata research and integration
-- manuscript/text alignment work
-- proofreading editions
-- zone annotation (bounding boxes) on illuminations
-
-### Front desk and security agent - Musee d'art et d'histoire Baron Gerard (Bayeux)
-
-**June 2023; June-July 2024**
-
-### Private tutoring
-
-**September 2022 - December 2023**
-
-Tutoring high-school students in mathematics and scientific subjects.
+**Outlook:** History agregation, then a PhD with a strong digital and computational component.
 
 ---
 
 ## Education
 
-- **Ecole nationale des Chartes, Ecole Normale Superieure and Universite PSL** - MA in Digital Humanities (Sept. 2025 - present)
+- **Ecole nationale des chartes, Ecole normale superieure & Universite PSL** — MA in "Digital and Computational Humanities" (2025 – present)
+  Research seminars in history and philosophy (EHESS, ENS); practical digital humanities classes (ENC); geography lectures (Sorbonne). Member of the CartaData junior enterprise.
 
-Research seminars in history and philosophy at EHESS and ENS; practical digital humanities classes at ENC; geography lectures at Sorbonne.
+- **Universite Paris 1 Pantheon-Sorbonne** — BA in History, highest honors (2022 – 2025)
+  Additional courses in history and computer science; research seminars in history and philosophy; auditing political science courses; evening classes at the Louvre.
 
-- **Universite Paris 1 Pantheon-Sorbonne** - BA in History, highest honors (Sept. 2022 - June 2025)
+- **Lycee Saint-Louis (Paris 6e)** — CPGE PCSI (2021 – 2022) — 23rd / 46.
 
-Additional courses in history and computer science; research seminars in history and philosophy; auditing political science undergraduate courses.
+---
 
-- **Lycee Saint-Louis (Paris 6e)** - CPGE PCSI (Sept. 2021 - July 2022) - 23rd / 46
+## Research experience
+
+### Research internship — named-entity recognition (NER)
+**May – December 2026 — ANR project DECIDON (EPITA · ENC · EHESS)**
+A computational study of parliamentary life under the Third Republic (1870-1940): how public problems circulate between the press and Parliament, and agenda-setting mechanisms. Designing the annotation guide and schema and coordinating the annotation effort; selecting, training, and running NER models; upcoming: event detection. Internship equivalent to 5 months full-time.
+
+### Internship — digital editing and textometry
+**January – April 2025 — CACTUS group, ENS de Lyon**
+Participation in the digital editing of medieval texts from the [Base de Francais Medieval](https://txm-bfm.huma-num.fr/txm/): metadata research and integration; manuscript/text alignment; proofreading editions; zone annotation (bounding boxes) on illuminations.
+
+---
+
+## Digital humanities projects (selection)
+
+### Vaucluse postcards — VLM pipeline & mapping (2026)
+ENC hackathon and CartaData junior enterprise. OCR of postcards with VLMs, metadata extraction and cleaning, database querying via API as a safeguard, georeferencing, JSON/CSV structuring, and production of an interactive map (HTML). Generalizing the pipeline to offer this service to other archival collections.
+- **Repository:** https://github.com/icimathieu/vaucluse — **Portfolio:** https://huggingface.co/spaces/icimathieu/cartes_portfolio
+
+### Thesis — building a corpus of "pasteurization" (1870-1914) (2025 – present)
+Thesis in the history of science, supervised by Anne Rasmussen (EHESS) and Marie Puren (EPITA, ENC). Gallica scraping and metadata extraction; OCR of scientific journals (late 19th – early 20th century) with a benchmark of several models; corpus and database structuring.
+- **Repositories:** https://github.com/icimathieu/scraping_pdf · https://github.com/icimathieu/transcription · https://github.com/icimathieu/latex_memoire (mini-thesis)
+
+### FromLego2Hero — mosaic reassembly (2026)
+Group project (Python course). Reassembling fragmented mosaics into tesserae (or groups of tesserae) with VLMs and/or graph neural networks (GNNs). Large-scale generation of synthetic data (LEGO mosaics) to enable knowledge transfer between the two kinds of mosaics; data-degradation techniques to generalize learning. Work submitted to a digital humanities conference.
+
+---
+
+## Technical skills
+
+- **Programming & data:** Python (numpy, pandas, networkx, scikit-learn, PyTorch, OpenAI API, folium); knowledge graphs and GNNs, synthetic data generation (augmentation, degradation); HTML, JavaScript, RSS.
+- **Scraping:** BeautifulSoup (HTML parsing), Selenium (anti-bot bypass), Scrapy (crawling) — press and archives (Gallica, *Le Monde diplomatique*, Archives du Vaucluse); IIIF and heritage APIs (Gallica, BnF).
+- **OCR, vision & annotation:** PaddleOCR, Tesseract, pero-ocr, YOLO (local); Qwen-VL, Gemini (API); Label Studio; design of annotation schemas and guides.
+- **NLP & textometry:** TXM, Iramuteq; n-grams, function words, distances; classification, NER, RAG, stylometry, emotion detection.
+- **Structuring & editing:** XML-TEI, XPath, SQL, LaTeX; digital publishing workflows; basic database knowledge.
+- **Tools:** Git/GitHub, Hugging Face, LLMs (via API or locally); operating remote machines and servers (SSH).
+
+---
+
+## Languages
+
+**French** native · **English** C1 (TOEIC 860, 2020) · **German** B1–B2.
+
+---
+
+## Outreach & science communication
+
+### Video creator — [Histosef](https://www.youtube.com/@LHistosef/videos)
+**2023 – 2026**
+Production of popular history video content on YouTube, based on scientific readings and essays.
+
+### Writer — L'Ouvreuse (Sorbonne webzine)
+**2024 – 2025**
+
+---
+
+## Other experience
+
+### Front desk and security agent — Musee d'art et d'histoire Baron Gerard (Bayeux)
+**2023, 2024**
+
+### Private tutoring
+**2022 – 2023**
+Mathematics and scientific subjects (high-school level).

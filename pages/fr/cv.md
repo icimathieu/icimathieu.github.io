@@ -11,89 +11,98 @@ translation_key: cv
 
 # Mathieu Rivière
 
+Étudiant en M1 « Humanités numériques et computationnelles » — École nationale des chartes · Université PSL
+
 **Adresse mail :** mathieu.riviere@chartes.psl.eu
+
+**Site :** [https://icimathieu.github.io/](https://icimathieu.github.io/)
 
 **GitHub :** [https://github.com/icimathieu](https://github.com/icimathieu)
 
-**Site :** [https://icimathieu.github.io/](https://icimathieu.github.io/) 
+**Hugging Face :** [https://huggingface.co/icimathieu](https://huggingface.co/icimathieu)
 
 ---
 
 ## Profil
 
-Étudiant en M1 Humanités Numériques à l'École des Chartes, intéressé par les infrastructures du web au sens large, les workflows de traitement de données et les récentes opportunités permises par l’IA générative, je souhaite réaliser un stage de recherche ou d’application en humanités numériques.
+Étudiant en humanités numériques, je travaille à l'application de méthodes computationnelles à l'histoire contemporaine : exploitation de sources numérisées (voire numériques) et traitement automatique de la langue. Mon mémoire d'histoire des sciences porte sur la pasteurisation de la France métropolitaine (1870-1914) et croise pastoriens, revues scientifiques, presse et parlementaires sous la IIIe République ; il mobilise scraping, OCR, structuration de corpus, annotation, RAG et classification.
 
-Mon mémoire de master en histoire des sciences porte sur les interactions entre pastoriens, revues scientifiques, presse et parlementaires sous la IIIe République. Il mobilise des méthodes computationnelles : scraping Gallica, OCR, structuration de corpus, annotation, RAG et plus largement traitement automatique de la langue.
-
-**Perspectives :** Agrégation d’histoire puis doctorat en histoire avec forte composante en humanités numériques.
-
----
-
-## Compétences
-
-- **Langues :** Anglais C1 (TOEIC 860, 2020) ; Allemand B1–B2  
-- **Programmation / data & web :**  Python (numpy, pandas, networkx, scikit-learn, PyTorch, API OpenAI, folium) ; HTML, JavaScript et RSS (développement web simple) ; C (bases), R (bases).
-- **Scraping :** BeautifulSoup (parsing HTML), Selenium (contournement d’anti-bots), Scrapy (gestion de proxys et VPN) : scraping de presse et d’archives (Gallica, *Le Monde diplomatique*, Archives du Vaucluse)  
-- **OCR, vision & annotation :** modèles en local (PaddleOCR, Tesseract, YOLO) ou via API (Qwen-VL, Gemini) et Label Studio.
-- **Structuration / édition :** XML-TEI, XPath, LaTeX, workflows d’édition numérique, notions en bases de données.
-- **Textométrie / TAL :** TXM, Iramuteq, traitements Python (n-grams, mots-fonctions, distances, etc.), RAG, NER, stylométrie, détection d'émotions.
-- **Outils :** GitHub (versionnement et publication), HuggingFace, LLMs via API ou en local, Suite Office ou équivalents.
-
----
-
-## Projets (sélection)
-
-### Archives du Vaucluse — Pipeline OCR, géolocalisation, et cartographie de cartes postales (Hackathon ENC 2026)
-- **Dépôt :** https://github.com/icimathieu/vaucluse  
-- **Objet :** OCR de cartes postales avec VLMs, extraction et nettoyage de métadonnées, géoréférencement, structuration JSON/CSV et production d’une carte interactive (HTML). Interrogations de bases de données en local et via API.
-
-### Stylométrie oral/écrit — corpus Jordan Bardella
-- **Dépôt :** https://github.com/icimathieu/stylometrie_bardella_v1  
-- **Objet :** comparaison stylométrique entre corpus écrit, corpus oral transcrit et corpus de contrôle ; extraction de traits (n-grams, mots-fonctions), mesures de distance (cosinus, Burrows’ Delta), scripts de prétraitement et visualisations.
-
-### Mémoire de master — actuellement : scraping, structuration de corpus scientifiques et annotation
-- **Dépôts :**  https://github.com/icimathieu/scraping_pdf & https://github.com/icimathieu/transcription  
-- **Objet :** scraping et extraction de métadonnées depuis Gallica ; OCR de revues scientifiques (fin XIXe – début XXe) avec comparaison de différents modèles ; structuration de corpus ; gestion de fichiers et bases de données ; premières expérimentations d’annotation avec Label Studio et de RAG (non publiées)
-
----
-
-## Expérience
-
-### Vidéaste — [Histosef](https://www.youtube.com/@LHistosef/videos)  
-**Juin 2023 – actuel**  
-Production de contenus audiovisuels de popularisation historique sur YouTube à partir de lectures scientifiques voire d'essais.
-
-### Rédacteur — L’Ouvreuse (webzine Sorbonne)  
-**Juillet 2024 – actuel**  
-Rédaction d’articles en histoire politique et culturelle.
-
-### Stage de recherche — Édition numérique et textométrie (groupe CACTUS, ENS de Lyon)  
-**Janvier 2025 – Avril 2025**  
-Participation à un projet d’édition numérique de textes médiévaux :  
-- modifications dans la [Base de Français Médiéval](https://txm-bfm.huma-num.fr/txm/) 
-- recherche et intégration de métadonnées  
-- correspondances manuscrits/textes  
-- relecture d’éditions  
-- annotation de zones (bounding boxes) sur enluminures  
-
-### Agent d'accueil et de surveillance — Musée d'art et d'histoire Baron Gérard (Bayeux)  
-**Juin 2023 ; Juin–Juillet 2024**  
-Accueil du public, gestion boutique, sécurité.
-
-### Cours particuliers  
-**Septembre 2022 – Décembre 2023**  
-Accompagnement de lycéens en mathématiques et disciplines scientifiques.
+**Perspectives :** agrégation d'histoire puis doctorat à forte composante numérique et computationnelle.
 
 ---
 
 ## Formation
 
-- **École nationale des Chartes, École Normale Supérieure et Université PSL** — Master Humanités numériques (Sept. 2025 – actuel)  
-  Séminaires de recherche en histoire et philosophie à l’EHESS et à l’ENS ; travaux dirigés d’humanités numériques à l'ENC ; cours magistraux de géographie à la Sorbonne.
+- **École nationale des chartes, École normale supérieure & Université PSL** — Master « Humanités numériques et computationnelles » (2025 – actuel)
+  Séminaires de recherche en histoire et philosophie (EHESS, ENS) ; travaux dirigés d'humanités numériques (ENC) ; cours magistraux de géographie (Sorbonne). Membre de la Junior-Entreprise CartaData.
 
-- **Université Paris 1 Panthéon-Sorbonne** — Licence d’histoire, mention Très Bien (Sept. 2022 – Juin 2025)  
-  Cours complémentaires en histoire et informatique ; séminaires de recherche en histoire et philosophie ; auditeur libre de la licence de sciences politiques.
+- **Université Paris 1 Panthéon-Sorbonne** — Licence d'histoire, mention Très Bien (2022 – 2025)
+  Compléments en histoire et informatique ; séminaires d'histoire et de philosophie ; auditeur libre en licence de science politique ; cours du soir au Louvre.
 
-- **École du Louvre** — Initiation à l’histoire de l’art (Sept. 2024 – Juin 2025)
+- **Lycée Saint-Louis (Paris 6e)** — CPGE PCSI (2021 – 2022) — 23e / 46.
 
-- **Lycée Saint-Louis (Paris 6e)** — Classes préparatoires PCSI (Sept. 2021 – Juil. 2022) — 23e / 46
+---
+
+## Expérience de recherche
+
+### Stage de recherche — reconnaissance d'entités nommées (NER)
+**Mai – décembre 2026 — Projet ANR DECIDON (EPITA · ENC · EHESS)**
+Étude computationnelle de la vie parlementaire sous la IIIe République (1870-1940) : circulation des problèmes publics entre presse et Parlement et mécanismes de mise à l'agenda. Conception du guide et du schéma d'annotation et coordination des annotations ; sélection, entraînement et inférence de modèles de NER ; à venir : détection d'évènements. Stage équivalent à 5 mois à temps plein.
+
+### Stage — édition numérique et textométrie
+**Janvier – avril 2025 — Groupe CACTUS, ENS de Lyon**
+Participation à l'édition numérique de textes médiévaux de la [Base de Français Médiéval](https://txm-bfm.huma-num.fr/txm/) : recherche et intégration de métadonnées ; correspondances manuscrits/textes ; relecture d'éditions ; annotation de zones (bounding boxes) sur enluminures.
+
+---
+
+## Projets en humanités numériques (sélection)
+
+### Cartes postales du Vaucluse — pipeline VLM & cartographie (2026)
+Hackathon ENC et Junior-Entreprise CartaData. OCR de cartes postales par VLMs, extraction et nettoyage de métadonnées, requêtage de bases de données via API comme garde-fou, géoréférencement, structuration JSON/CSV et production d'une carte interactive (HTML). Généralisation de la pipeline pour offrir ce service à d'autres fonds d'archives.
+- **Dépôt :** https://github.com/icimathieu/vaucluse — **Portfolio :** https://huggingface.co/spaces/icimathieu/cartes_portfolio
+
+### Mémoire — construction d'un corpus de la pasteurisation (1870-1914) (2025 – actuel)
+Mémoire d'histoire des sciences, sous la direction d'Anne Rasmussen (EHESS) et de Marie Puren (EPITA, ENC). Scraping Gallica et extraction de métadonnées ; OCR de revues scientifiques (fin XIXe – début XXe) avec benchmark de plusieurs modèles ; structuration de corpus et bases de données.
+- **Dépôts :** https://github.com/icimathieu/scraping_pdf · https://github.com/icimathieu/transcription · https://github.com/icimathieu/latex_memoire (mini-mémoire)
+
+### FromLego2Hero — reconstitution de mosaïques (2026)
+Projet de groupe (cours de Python). Reconstitution de mosaïques fragmentées en tesselles (ou groupes de tesselles) par VLM et/ou réseaux de neurones sur graphes (GNN). Génération massive de données synthétiques (mosaïques LEGO) pour permettre un transfert de connaissance entre les deux types de mosaïques ; techniques de dégradation de données pour généraliser l'apprentissage. Travail soumis à une conférence d'humanités numériques.
+
+---
+
+## Compétences techniques
+
+- **Programmation & data :** Python (numpy, pandas, networkx, scikit-learn, PyTorch, API OpenAI, folium) ; graphes de connaissances et GNN, génération de données synthétiques (augmentation, dégradation) ; HTML, JavaScript, RSS.
+- **Scraping :** BeautifulSoup (parsing HTML), Selenium (contournement d'anti-bots), Scrapy (crawling) — presse et archives (Gallica, *Le Monde diplomatique*, Archives du Vaucluse) ; IIIF et APIs patrimoniales (Gallica, BnF).
+- **OCR, vision & annotation :** PaddleOCR, Tesseract, pero-ocr, YOLO (local) ; Qwen-VL, Gemini (API) ; Label Studio ; conception de schémas et guides d'annotation.
+- **TAL & textométrie :** TXM, Iramuteq ; n-grammes, mots-fonctions, distances ; classification, NER, RAG, stylométrie, détection d'émotions.
+- **Structuration & édition :** XML-TEI, XPath, SQL, LaTeX ; workflows d'édition numérique ; notions de bases de données.
+- **Outils :** Git/GitHub, Hugging Face, LLMs (via API ou en local) ; pilotage de machines distantes et de serveurs (SSH).
+
+---
+
+## Langues
+
+**Français** langue maternelle · **Anglais** C1 (TOEIC 860, 2020) · **Allemand** B1–B2.
+
+---
+
+## Diffusion & vulgarisation
+
+### Vidéaste — [Histosef](https://www.youtube.com/@LHistosef/videos)
+**2023 – 2026**
+Production de contenus audiovisuels de vulgarisation historique sur YouTube, à partir de lectures scientifiques et d'essais.
+
+### Rédacteur — L'Ouvreuse (webzine, Sorbonne)
+**2024 – 2025**
+
+---
+
+## Autres expériences
+
+### Agent d'accueil et de surveillance — Musée d'art et d'histoire Baron Gérard (Bayeux)
+**2023, 2024**
+
+### Cours particuliers
+**2022 – 2023**
+Mathématiques et disciplines scientifiques (niveau lycée).

@@ -4,8 +4,8 @@ date: 2026-02-01
 last_update: 2026-02-26
 status: "en cours"
 progress: "50%"
-project_order: 3
-featured: true
+project_order: 5
+featured: false
 comments: true
 repo_url: "https://github.com/icimathieu/stylometrie_bardella_v1"
 categories: [projet]
