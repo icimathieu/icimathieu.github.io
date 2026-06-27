@@ -16,6 +16,7 @@ layout: default
   <p>
     {% if page.repo_url %}<a href="{{ page.repo_url }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Source code{% else %}Code source{% endif %}</a>{% endif %}
     {% if page.repo_url_secondary %} · <a href="{{ page.repo_url_secondary }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Source code 2{% else %}Code source 2{% endif %}</a>{% endif %}
+    {% if page.repo_url_third %} · <a href="{{ page.repo_url_third }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Source code 3{% else %}Code source 3{% endif %}</a>{% endif %}
     {% if page.demo_url %} · <a href="{{ page.demo_url }}" target="_blank" rel="noopener">{% if current_lang == "en" %}Demo{% else %}Démo{% endif %}</a>{% endif %}
   </p>
 

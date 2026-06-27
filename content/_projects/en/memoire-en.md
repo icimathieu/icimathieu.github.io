@@ -9,6 +9,7 @@ featured: true
 comments: true
 repo_url: "https://github.com/icimathieu/scraping_pdf"
 repo_url_secondary: "https://github.com/icimathieu/transcription"
+repo_url_third: "https://github.com/icimathieu/latex_memoire"
 categories: [project]
 tags: [thesis, research]
 lang: en
@@ -24,7 +25,8 @@ Document thesis progress, methodological choices, and writing milestones.
 
 - downloaded a sub-corpus from the general press
 - Gallica PDF scraping pipeline (mostly scientific journals)
-- first OCR script with Tesseract and column reconstruction
+- first OCR script with Tesseract and column reconstruction; switched to pero-ocr after benchmarking
+- mini-thesis written in LaTeX: [latex_memoire](https://github.com/icimathieu/latex_memoire) (historiography, introduction, problem statement, etc.)
 
 ## Current state & Next steps
 
@@ -38,3 +40,4 @@ Document thesis progress, methodological choices, and writing milestones.
 
 - **26/02/2026**: created the project page and initial structure.
 - **18/03/2026**: finished the PDF scraping pipeline using Gallica APIs and Selenium. Launched scripts in background. Scientific sub-corpus now includes around 50 journals from diverse fields (agriculture, medicine, industry, biology, etc.).
+- **05/2026**: mini-thesis wrapped up!
