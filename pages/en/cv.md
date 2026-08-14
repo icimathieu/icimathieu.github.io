@@ -65,8 +65,8 @@ ENC hackathon and CartaData junior enterprise. OCR of postcards with VLMs, metad
 Thesis in the history of science, supervised by Anne Rasmussen (EHESS) and Marie Puren (EPITA, ENC). Gallica scraping and metadata extraction; OCR of scientific journals (late 19th – early 20th century) with a benchmark of several models; corpus and database structuring.
 - **Repositories:** https://github.com/icimathieu/scraping_pdf · https://github.com/icimathieu/transcription · https://github.com/icimathieu/latex_memoire (mini-thesis)
 
-### Projet-2026 — mosaic reassembly (2026)
-Group project (Python course). Reassembling fragmented mosaics into tesserae (or groups of tesserae) with VLMs and/or graph neural networks (GNNs). Large-scale generation of synthetic data (synthetic mosaics) to enable knowledge transfer between the two kinds of mosaics; data-degradation techniques to generalize learning. Work submitted to a digital humanities conference.
+### Ongoing research project (2026)
+Group project (Python course). Detailed description to come.
 
 ---
 

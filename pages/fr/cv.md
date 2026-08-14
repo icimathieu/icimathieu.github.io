@@ -65,8 +65,8 @@ Hackathon ENC et Junior-Entreprise CartaData. OCR de cartes postales par VLMs, e
 Mémoire d'histoire des sciences, sous la direction d'Anne Rasmussen (EHESS) et de Marie Puren (EPITA, ENC). Scraping Gallica et extraction de métadonnées ; OCR de revues scientifiques (fin XIXe – début XXe) avec benchmark de plusieurs modèles ; structuration de corpus et bases de données.
 - **Dépôts :** https://github.com/icimathieu/scraping_pdf · https://github.com/icimathieu/transcription · https://github.com/icimathieu/latex_memoire (mini-mémoire)
 
-### Projet-2026 — reconstitution de mosaïques (2026)
-Projet de groupe (cours de Python). Reconstitution de mosaïques fragmentées en tesselles (ou groupes de tesselles) par VLM et/ou réseaux de neurones sur graphes (GNN). Génération massive de données synthétiques (mosaïques synthétiques) pour permettre un transfert de connaissance entre les deux types de mosaïques ; techniques de dégradation de données pour généraliser l'apprentissage. Travail soumis à une conférence d'humanités numériques.
+### Projet de recherche en cours (2026)
+Projet de groupe (cours de Python). Descriptif détaillé à venir.
 
 ---
 
