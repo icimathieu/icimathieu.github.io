@@ -21,6 +21,10 @@ translation_key: cv
 
 **Hugging Face :** [https://huggingface.co/icimathieu](https://huggingface.co/icimathieu)
 
+**ORCID :** [https://orcid.org/0009-0006-5829-7152](https://orcid.org/0009-0006-5829-7152)
+
+**HAL :** [idHAL mathieu-riviere-2003](https://hal.science/search/index/?q=*&authIdHal_s=mathieu-riviere-2003)
+
 ---
 
 ## Profil
